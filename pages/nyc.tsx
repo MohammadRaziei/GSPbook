@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
-import styles from './../styles/page.module.css';
+import styles from './../styles/page.module.css'
+import { Container } from '../components/Container';
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 export default function Nyc({ }) {
 
@@ -9,11 +10,9 @@ export default function Nyc({ }) {
 	const [query] = useLanguageQuery();
 
 	return (
-		<div 
+		<Container 
 			className={`
-				${styles.container} 
-				${styles.nyc}
-				${query?.lang === 'en' ? styles.containerEn : styles.containerFa}
+				${styles.index}
 			`}
 		>
 			<Head>
@@ -37,6 +36,6 @@ export default function Nyc({ }) {
 				</p>
 			</div>
 			<div className={styles.imageCredits}>{t('nyc.imageCredits')}</div>
-		</div>
+		</Container>
 	);
 }
