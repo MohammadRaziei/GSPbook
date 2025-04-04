@@ -57,38 +57,6 @@
 
 /* theme: nyc */
 
-.nyc {
-	background: #222;
-	background-position: top center;
-}
-
-.nyc .main {
-	color: white;
-	text-shadow: 0px 0 7px #000;
-
-	align-items: flex-start;
-	place-content: flex-end;
-	margin-top: auto;
-}
-
-.nyc .main .title::after {
-	background-color: #49778a;
-}
-
-.nyc .main .navigation {
-	color: #49778a;
-}
-
-.nyc .main .navigation:link,
-.nyc .main .navigation::visited {
-	color: #f5833c;
-}
-
-.nyc .main .navigation:hover,
-.nyc .main .navigation:focus,
-.nyc .main .navigation:active {
-	color: #e0e0e0;
-}
 
 .main {
 	padding: 0;
@@ -246,8 +214,9 @@
 
 .langDropdown {
 	position: absolute;
-	top: 0;
-	left: calc(100% + 4px);
+	top: 100%;
+	left: 0;
+	margin-top: 4px;
 	background: #111;
 	border: 1px solid #333;
 	border-radius: 4px;
@@ -260,6 +229,15 @@
 	visibility: hidden;
 	transition: all 0.2s ease;
 }
+
+.rtl .langDropdown {
+	left: auto;
+	right: 0;
+}
+
+/* Remove these existing positioning rules */
+/* .langDropdown { left: calc(100% + 4px); } */
+/* .rtl .langDropdown { right: calc(100% + 4px); } */
 
 .langSwitcherContainer:hover .langDropdown {
 	opacity: 1;

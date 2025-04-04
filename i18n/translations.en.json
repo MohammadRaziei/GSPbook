@@ -4,26 +4,20 @@
       "languageSwitcher": "Select language: "
     },
     "index": {
-      "headline": "The fundations of graph signal processing",
-      "copy": "Book summary: This book is about [Book Subject] and helps you [Primary Book Objective].",
-      "metaDescription": "Official website for [Book Title] by [Author Name]. A [Short descriptive sentence about the book].",
+      "headline": "The Foundations of Graph Signal Processing",
+      "copy": "Comprehensive guide to understanding graph signal processing - from fundamental concepts to advanced applications in network analysis and machine learning.",
+      "metaDescription": "Official website for 'The Foundations of Graph Signal Processing' by Arash Amini & Mohammad Rezaiee Fijani",
       "author": {
-        "name": "Author Name",
-        "bio": "Short bio line (e.g., Author and researcher in [Field/Area]).",
-        "linkedInUrl": "https://linkedin.com/in/your-profile"
+        "name": "Arash Amini & Mohammad Rezaiee Fijani",
+        "bio": "Researchers and lecturers in Signal Processing at Sharif University of Technology",
+        "linkedInUrl": "#"
       },
       "book": {
-        "title": "Book Details",
-        "description": "This book includes [Brief explanation] focusing on [Subject/Audience].",
-        "detailsUrl": "/book-details"
+        "title": "Book Features",
+        "description": "Published by Sharif University of Technology Press | 450 pages | 120+ illustrations | Practical MATLAB examples",
+        "detailsUrl": "/details"
       },
-      "citation": "@book{your_citation_key,\n  author = {Author Name},\n  title = {Book Title},\n  year = {Publication Year},\n  publisher = {Publisher}\n}"
-    },
-    "nav": {
-      "nyc": {
-        "text": "Sample Pages",
-        "route": "/sample-pages"
-      }
+      "citation": "@book{gsp2023,\n  author = {Amini, Arash and Rezaiee Fijani, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}"
     }
   }
 }

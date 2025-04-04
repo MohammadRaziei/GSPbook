@@ -42,10 +42,7 @@ export const LangSwitch: React.FC = () => {
   );
 
   return (
-    <div 
-      className={`${styles.langSwitcherContainer} ${isRTL ? styles.rtl : ''}`} 
-      ref={dropdownRef}
-    >
+    <div className={`${styles.langSwitcherContainer} relative ${isRTL ? styles.rtl : ''}`} ref={dropdownRef}>
       <div className={styles.langSwitcherButton} style={{ backgroundColor: 'inherit' }}>
         <ReactCountryFlag
           countryCode={isRTL ? 'IR' : 'US'}
@@ -58,19 +55,9 @@ export const LangSwitch: React.FC = () => {
         <span style={{ margin: '0.4em' }}>{isRTL ? 'فا' : 'EN'}</span>
       </div>
       
-      <div className={styles.langDropdown}>
+      <div className={`${styles.langDropdown} absolute top-full mt-1 left-0 z-[9999]`}>
         {/* Fixed the ternary operator syntax */}
-        {isRTL ? (
-          <>
-            {enBox}
-            {faBox}
-          </>
-        ) : (
-          <>
-            {faBox}
-            {enBox}
-          </>
-        )}
+        {isRTL ? enBox : faBox}
       </div>
     </div>
   );
