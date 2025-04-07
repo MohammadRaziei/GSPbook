@@ -23,7 +23,7 @@
         ]
       },
       "book": {
-        "coverImage": "images/bookcover-fa.png",
+        "coverImage": "./images/bookcover-fa.png",
         "title": "ویژگی‌های کتاب",
         "description": "انتشارات دانشگاه صنعتی شریف | 450 صفحه | بیش از 120 تصویر | مثالهای عملی با MATLAB",
         "detailsUrl": "/details"
