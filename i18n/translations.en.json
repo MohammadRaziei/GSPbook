@@ -6,9 +6,9 @@
     "index": {
       "headline": "The Foundations of Graph Signal Processing",
       "copy": "Comprehensive guide to understanding graph signal processing - from fundamental concepts to advanced applications in network analysis and machine learning.",
-      "metaDescription": "Official website for 'The Foundations of Graph Signal Processing' by Arash Amini & Mohammad Rezaiee Fijani",
+      "metaDescription": "Official website for 'The Foundations of Graph Signal Processing' by Arash Amini & Mohammad Raziei Fijani",
       "author": {
-        "name": "Arash Amini & Mohammad Rezaiee Fijani",
+        "name": "Arash Amini & Mohammad Raziei",
         "bio": "Researchers and lecturers in Signal Processing at Sharif University of Technology",
         "linkedInUrl": "#"
       },
@@ -17,7 +17,7 @@
         "description": "Published by Sharif University of Technology Press | 450 pages | 120+ illustrations | Practical MATLAB examples",
         "detailsUrl": "/details"
       },
-      "citation": "@book{gsp2023,\n  author = {Amini, Arash and Rezaiee Fijani, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}"
+      "citation": "@book{gsp2023,\n  author = {Amini, Arash and Raziei, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}"
     }
   }
 }
