@@ -42,8 +42,12 @@ export default function Index() {
                     {t('index.author.authors').map((author: any, index: number) => (
                         <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
                             <div className="flex items-center gap-6 mb-6">
-                                <div className="h-24 w-24 rounded-full bg-indigo-100 flex items-center justify-center">
-                                    <FontAwesomeIcon icon={faUserGraduate} className="text-indigo-600 text-3xl" />
+                                <div className="h-32 w-32 rounded-full bg-indigo-100 border-4 border-indigo-50 overflow-hidden">
+                                    <img
+                                        src={author.photoUrl}
+                                        alt={author.name}
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <div>
                                     <h2 className="text-3xl font-bold text-gray-900">{author.name}</h2>
@@ -65,6 +69,34 @@ export default function Index() {
 
                 {/* Book Details & Citation sections updated similarly... */}
             </main>
+            {/* Add this section after the main headline */}
+            <div className="mb-16">
+                <img 
+                    src={t('index.book.coverImage')}
+                    alt={t('index.book.coverAlt')}
+                    className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg border-8 border-white"
+                />
+            </div>
+
+            {/* Citation Section */}
+            <section className="bg-white p-8 rounded-2xl shadow-lg mb-20">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+                    {t('index.citation.title')}
+                </h3>
+                <pre className="bg-gray-50 p-6 rounded-lg overflow-x-auto">
+                    <code className="text-sm font-mono text-gray-700 whitespace-pre-wrap">
+                        {t('index.citation.code')}
+                    </code>
+                </pre>
+                <div className="mt-4 flex gap-4">
+                    <button 
+                        onClick={() => navigator.clipboard.writeText(t('index.citation'))}
+                        className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors"
+                    >
+                        {t('index.citation.webcite')}
+                    </button>
+                </div>
+            </section>
         </Container>
     );
 }

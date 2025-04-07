@@ -16,7 +16,11 @@ export const Container: React.FC<ContainerProps> = ({
   const isRTL = query?.lang === 'fa';
 
   return (
-    <div className={`min-h-screen ${className} ${isRTL ? 'rtl font-vazir' : 'ltr font-sans'}`}>
+    <div className={`
+      min-h-screen 
+      ${className} 
+      ${isRTL ? `${styles.containerFa} rtl` : `${styles.containerEn} ltr`}
+    `}>
       {children}
     </div>
   );

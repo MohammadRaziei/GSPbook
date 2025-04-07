@@ -7,22 +7,29 @@
         "authors": [
           {
             "name": "Arash Amini",
+            "photoUrl": "https://mohammadraziei.github.io/static/assets/images/arash-amini.jpg",
             "bio": "Signal Processing Researcher at Sharif University of Technology",
             "linkedInUrl": "#"
           },
           {
             "name": "Mohammad Rezaiee Fijani",
+            "photoUrl": "https://mohammadraziei.github.io/static/assets/downloaded/gravatar.png",
             "bio": "Applied Mathematics Lecturer at Sharif University of Technology", 
             "linkedInUrl": "#"
           }
         ]
       },
       "book": {
+        "coverImage": "images/bookcover-en.png",
         "title": "Book Features",
         "description": "Published by Sharif University of Technology Press | 450 pages | 120+ illustrations | Practical MATLAB examples",
         "detailsUrl": "/details"
       },
-      "citation": "@book{gsp2023,\n  author = {Amini, Arash and Raziei, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}"
+      "citation": {
+        "title": "Citation",
+        "code": "@book{gsp2023,\n  author = {Amini, Arash and Raziei, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}",
+        "webcite": "Cite this page"
+      }
     }
   }
 }

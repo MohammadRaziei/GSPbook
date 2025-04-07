@@ -3,29 +3,36 @@
     "ui": {
       "languageSwitcher": "انتخاب زبان: "
     },
-    "index": {
+     "index": {
       "headline": "مبانی پردازش سیگنال گرافی",
       "copy": "راهنمای جامع درک پردازش سیگنال گرافی - از مفاهیم پایه تا کاربردهای پیشرفته در تحلیل شبکه‌ها و یادگیری ماشین",
       "author": {
         "authors": [
           {
             "name": "آرش امینی",
+            "photoUrl": "https://mohammadraziei.github.io/static/assets/images/arash-amini.jpg",
             "bio": "پژوهشگر پردازش سیگنال در دانشگاه صنعتی شریف",
             "linkedInUrl": "#"
           },
           {
-            "name": "محمد رضیئی فیجانی",
+            "name": "محمد رضیئی‌فیجانی",
+            "photoUrl": "https://mohammadraziei.github.io/static/assets/downloaded/gravatar.png",
             "bio": "مدرس ریاضیات کاربردی در دانشگاه صنعتی شریف",
             "linkedInUrl": "#"
           }
         ]
       },
       "book": {
+        "coverImage": "images/bookcover-fa.png",
         "title": "ویژگی‌های کتاب",
         "description": "انتشارات دانشگاه صنعتی شریف | 450 صفحه | بیش از 120 تصویر | مثالهای عملی با MATLAB",
         "detailsUrl": "/details"
       },
-      "citation": "@book{gsp2023,\n  author = {امینی، آرش و رضیئی فیجانی، محمد},\n  title = {اصول پردازش سیگنال گرافی},\n  year = {1402},\n  publisher = {انتشارات دانشگاه صنعتی شریف}\n}"
+      "citation": {
+        "title": "استناد",
+        "code": "@book{gsp2023,\n  author = {امینی، آرش و رضیئی فیجانی، محمد},\n  title = {اصول پردازش سیگنال گرافی},\n  year = {1402},\n  publisher = {انتشارات دانشگاه صنعتی شریف}\n}",
+        "webcite": "استناد به این صفحه"
+      }
     }
   }
 }

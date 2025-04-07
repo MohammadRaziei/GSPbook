@@ -263,10 +263,9 @@
 	border-right: 1px solid #333;
 }
 
-/* استایل‌های RTL */
 .rtl .langDropdown {
 	left: auto;
-	right: calc(100% + 4px);
+	right: 0;
 }
 
 .rtl .langOption:not(:last-child) {
