@@ -21,6 +21,10 @@
     "export": "yarn yaml2json && next build && next export && npx serve ./out"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@vercel/analytics": "^1.0.0",
     "next": "^12.3.4",
     "react": "^18.0.0",

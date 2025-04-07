@@ -9,22 +9,15 @@ interface ContainerProps {
 }
 
 export const Container: React.FC<ContainerProps> = ({ 
-  children, 
+  children,
   className = ''
 }) => {
   const [query] = useLanguageQuery();
   const isRTL = query?.lang === 'fa';
 
   return (
-    <div 
-      className={`
-        ${styles.container}
-        ${className}
-        ${isRTL ? styles.containerFa : styles.containerEn}
-      `}
-    //   style={{ background }}
-    >
+    <div className={`min-h-screen ${className} ${isRTL ? 'rtl font-vazir' : 'ltr font-sans'}`}>
       {children}
     </div>
   );
-}; 
+};

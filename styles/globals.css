@@ -3,6 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-secondary: 16 185 129;
+  }
+  
+  [dir='rtl'] {
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  
+  body {
+    @apply text-gray-800 bg-white antialiased;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-600 to-emerald-600 bg-clip-text text-transparent;
+  }
+}
+
 /* Keep your existing imports and styles */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 

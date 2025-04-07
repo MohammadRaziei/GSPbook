@@ -1,16 +1,21 @@
 {
   "i18n": {
-    "ui": {
-      "languageSwitcher": "Select language: "
-    },
     "index": {
       "headline": "The Foundations of Graph Signal Processing",
       "copy": "Comprehensive guide to understanding graph signal processing - from fundamental concepts to advanced applications in network analysis and machine learning.",
-      "metaDescription": "Official website for 'The Foundations of Graph Signal Processing' by Arash Amini & Mohammad Raziei Fijani",
       "author": {
-        "name": "Arash Amini & Mohammad Raziei",
-        "bio": "Researchers and lecturers in Signal Processing at Sharif University of Technology",
-        "linkedInUrl": "#"
+        "authors": [
+          {
+            "name": "Arash Amini",
+            "bio": "Signal Processing Researcher at Sharif University of Technology",
+            "linkedInUrl": "#"
+          },
+          {
+            "name": "Mohammad Rezaiee Fijani",
+            "bio": "Applied Mathematics Lecturer at Sharif University of Technology", 
+            "linkedInUrl": "#"
+          }
+        ]
       },
       "book": {
         "title": "Book Features",
