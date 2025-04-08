@@ -45,7 +45,7 @@ export default function Details() {
                                 {t('details.keyFeatures.title')}
                             </h3>
                             <ul className="space-y-3 text-lg text-gray-700">
-                                {t('details.keyFeatures.items').map((item, index) => (
+                                {t('details.keyFeatures.items').map((item: string, index: number) => (
                                     <li key={index} className="flex items-start">
                                         <span className="text-indigo-600 mr-2">•</span>
                                         <span>{item}</span>
