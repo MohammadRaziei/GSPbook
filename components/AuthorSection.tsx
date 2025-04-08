@@ -22,7 +22,7 @@ export const AuthorSection: React.FC = () => {
                             />
                         </div>
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">{author.name}</h2>
-                        <p className="text-lg text-indigo-600 mb-4">{t('common:author_title')}</p>
+                        <p className="text-lg text-indigo-600 mb-4">{t('index.author.author_title')}</p>
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
                             {author.bio}
                         </p>

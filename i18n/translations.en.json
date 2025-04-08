@@ -4,6 +4,7 @@
       "headline": "The Foundations of Graph Signal Processing",
       "copy": "Comprehensive guide to understanding graph signal processing - from fundamental concepts to advanced applications in network analysis and machine learning.",
       "author": {
+        "author_title": "Author",
         "linkedinText": "LinkedIn",
         "homepageText": "Homepage",
         "authors": [
