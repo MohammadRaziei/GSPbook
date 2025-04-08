@@ -35,16 +35,16 @@ export default function Index() {
                 <section className="bg-white rounded-3xl shadow-lg overflow-hidden">
                     <div className="flex flex-col md:flex-row">
                         {/* Book Cover */}
-                        <div className="relative md:w-1/3 p-6 flex items-center justify-center">
+                        <div className="relative md:w-1/4 p-6 flex items-center justify-center">
                             <img 
                                 src={handleImagePath(t('index.book.coverImage'))}
                                 alt={t('index.book.coverAlt')}
-                                className="w-full max-w-xs rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105"
+                                className="w-full max-w-[180px] rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105"
                             />
                         </div>
                         
                         {/* Book Description */}
-                        <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+                        <div className="md:w-3/4 p-8 md:p-12 flex flex-col justify-center">
                             <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('index.book.title')}</h2>
                             <p className="text-xl text-gray-600 leading-relaxed font-medium mb-6">
                                 {t('index.copy')}
