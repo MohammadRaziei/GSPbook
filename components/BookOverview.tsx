@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+import { handleImagePath } from '../utils/imageUtils';
 
 export const BookOverview: React.FC = () => {
     const { t } = useTranslation();
@@ -12,7 +13,7 @@ export const BookOverview: React.FC = () => {
                 {/* Book Cover */}
                 <div className="relative md:w-1/4 p-6 flex items-center justify-center">
                     <img 
-                        src={t('index.book.coverImage')}
+                        src={handleImagePath(t('index.book.coverImage'))}
                         alt={t('index.book.coverAlt')}
                         className="w-full max-w-[180px] rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105"
                     />
@@ -29,7 +30,7 @@ export const BookOverview: React.FC = () => {
                     </p>
                     
                     <Link 
-                        href={{ pathname: handleImagePath("/details"), query: query }}
+                        href={{ pathname: "/details", query: query }}
                         className="self-start px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center"
                     >
                         {t('index.book.detailsButton')}
