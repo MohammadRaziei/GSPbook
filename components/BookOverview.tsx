@@ -1,9 +1,11 @@
 import React from 'react';
-import { useTranslation } from 'next-export-i18n';
+import Link from 'next/link';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 import { handleImagePath } from '../utils/imageUtils';
 
 export const BookOverview: React.FC = () => {
     const { t } = useTranslation();
+    const [query] = useLanguageQuery();
     
     return (
         <section className="bg-white rounded-3xl shadow-lg overflow-hidden">
@@ -23,9 +25,16 @@ export const BookOverview: React.FC = () => {
                     <p className="text-xl text-gray-600 leading-relaxed font-medium mb-6">
                         {t('index.copy')}
                     </p>
-                    <p className="text-lg text-gray-500">
+                    <p className="text-lg text-gray-500 mb-8">
                         {t('index.book.description')}
                     </p>
+                    
+                    <Link 
+                        href={{ pathname: handleImagePath("/details"), query: query }}
+                        className="self-start px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center"
+                    >
+                        {t('index.book.detailsButton')}
+                    </Link>
                 </div>
             </div>
         </section>
