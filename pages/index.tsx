@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+import { handleImagePath } from '../utils/imageUtils';
+
 export default function Index() {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
@@ -32,7 +34,7 @@ export default function Index() {
                 {/* Book Cover Section */}
                 <div className="relative group">
                     <img 
-                        src={t('index.book.coverImage')}
+                        src={handleImagePath(t('index.book.coverImage'))}
                         alt={t('index.book.coverAlt')}
                         className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform transition-transform duration-300 group-hover:scale-105"
                     />
@@ -53,7 +55,7 @@ export default function Index() {
                             <div className="flex flex-col items-center text-center">
                                 <div className="h-40 w-40 rounded-full bg-indigo-100 border-4 border-indigo-50 overflow-hidden mb-6">
                                     <img
-                                        src={author.photoUrl}
+                                        src={handleImagePath(author.photoUrl)}
                                         alt={author.name}
                                         className="w-full h-full object-cover"
                                     />

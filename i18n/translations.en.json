@@ -20,7 +20,7 @@
         ]
       },
       "book": {
-        "coverImage": "./images/bookcover-en.png",
+        "coverImage": "/images/bookcover-en.png",
         "title": "Book Features",
         "description": "Published by Sharif University of Technology Press | 450 pages | 120+ illustrations | Practical MATLAB examples",
         "detailsUrl": "/details"

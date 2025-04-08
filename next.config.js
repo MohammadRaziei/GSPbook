@@ -1,5 +1,8 @@
 module.exports = {
 	reactStrictMode: true,
+	env: {
+		imagePrefix: process.env.NODE_ENV === 'production' ? '/GSPbook' : '',
+	},
 
 	webpack: function (config, { isServer }) {
 		config.experiments = { topLevelAwait: true };
