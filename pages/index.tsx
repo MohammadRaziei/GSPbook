@@ -31,21 +31,29 @@ export default function Index() {
                     <LangSwitch />
                 </div>
 
-                {/* Book Cover Section */}
-                <div className="relative group">
-                    <img 
-                        src={handleImagePath(t('index.book.coverImage'))}
-                        alt={t('index.book.coverAlt')}
-                        className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 rounded-3xl transition-all duration-300"></div>
-                </div>
-
                 {/* Book Overview */}
-                <section className="bg-white rounded-3xl shadow-lg p-12 border border-gray-100">
-                    <p className="text-2xl text-gray-600 leading-relaxed font-medium text-center">
-                        {t('index.copy')}
-                    </p>
+                <section className="bg-white rounded-3xl shadow-lg overflow-hidden">
+                    <div className="flex flex-col md:flex-row">
+                        {/* Book Cover */}
+                        <div className="relative md:w-1/3 p-6 flex items-center justify-center">
+                            <img 
+                                src={handleImagePath(t('index.book.coverImage'))}
+                                alt={t('index.book.coverAlt')}
+                                className="w-full max-w-xs rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105"
+                            />
+                        </div>
+                        
+                        {/* Book Description */}
+                        <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+                            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('index.book.title')}</h2>
+                            <p className="text-xl text-gray-600 leading-relaxed font-medium mb-6">
+                                {t('index.copy')}
+                            </p>
+                            <p className="text-lg text-gray-500">
+                                {t('index.book.description')}
+                            </p>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Author Section */}
