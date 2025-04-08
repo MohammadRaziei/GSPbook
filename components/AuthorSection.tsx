@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { handleImagePath } from '../utils/imageUtils';
 
 export const AuthorSection: React.FC = () => {
@@ -25,12 +26,20 @@ export const AuthorSection: React.FC = () => {
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
                             {author.bio}
                         </p>
-                        <a href={author.linkedInUrl} className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-800 transition-colors">
-                            <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
-                            <span className="font-medium">
-                                {query?.lang === 'fa' ? 'پروفایل لینکدین' : 'LinkedIn Profile'}
-                            </span>
-                        </a>
+                        <div className="flex space-x-4 rtl:space-x-reverse">
+                            <a href={author.linkedInUrl} className="inline-flex items-center mx-6 gap-2 text-indigo-600 hover:text-indigo-800 transition-colors">
+                                <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
+                                <span className="font-medium">
+                                    {t('index.author.linkedinText')}
+                                </span>
+                            </a>
+                            <a href={author.homepageUrl} className="inline-flex items-center mx-6 gap-2 text-indigo-600 hover:text-indigo-800 transition-colors">
+                                <FontAwesomeIcon icon={faHome} className="text-xl" />
+                                <span className="font-medium">
+                                    {t('index.author.homepageText')}
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             ))}

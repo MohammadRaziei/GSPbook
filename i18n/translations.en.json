@@ -4,18 +4,22 @@
       "headline": "The Foundations of Graph Signal Processing",
       "copy": "Comprehensive guide to understanding graph signal processing - from fundamental concepts to advanced applications in network analysis and machine learning.",
       "author": {
+        "linkedinText": "LinkedIn",
+        "homepageText": "Homepage",
         "authors": [
           {
             "name": "Arash Amini",
             "photoUrl": "https://mohammadraziei.github.io/static/assets/images/arash-amini.jpg",
             "bio": "Signal Processing Lecturer at Sharif University of Technology",
-            "linkedInUrl": "#"
+            "linkedInUrl": "#",
+            "homepageUrl": "https://sharif.ir/~aamini/"
           },
           {
             "name": "Mohammad Raziei",
             "photoUrl": "https://mohammadraziei.github.io/static/assets/downloaded/gravatar.png",
             "bio": "Signal Processing Researcher at Sharif University of Technology", 
-            "linkedInUrl": "#"
+            "linkedInUrl": "#",
+            "homepageUrl": "https://mohammadraziei.github.io"
           }
         ]
       },

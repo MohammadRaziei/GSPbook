@@ -7,18 +7,22 @@
       "headline": "مبانی پردازش سیگنال گرافی",
       "copy": "راهنمای جامع درک پردازش سیگنال گرافی - از مفاهیم پایه تا کاربردهای پیشرفته در تحلیل شبکه‌ها و یادگیری ماشین",
       "author": {
+        "linkedinText": "لینکدین",
+        "homepageText": "صفحه شخصی",
         "authors": [
           {
             "name": "آرش امینی",
             "photoUrl": "https://mohammadraziei.github.io/static/assets/images/arash-amini.jpg",
             "bio": "مدرس پردازش سیگنال در دانشگاه صنعتی شریف",
-            "linkedInUrl": "#"
+            "linkedInUrl": "#",
+            "homepageUrl": "https://sharif.ir/~aamini/"
           },
           {
             "name": "محمد رضیئی‌فیجانی",
             "photoUrl": "https://mohammadraziei.github.io/static/assets/downloaded/gravatar.png",
             "bio": "پژوهشگر پردازش سیگنال در دانشگاه صنعتی شریف",
-            "linkedInUrl": "#"
+            "linkedInUrl": "#",
+            "homepageUrl": "https://mohammadraziei.github.io"
           }
         ]
       },
