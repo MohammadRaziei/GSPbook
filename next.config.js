@@ -1,7 +1,7 @@
 module.exports = {
 	reactStrictMode: true,
 	env: {
-		imagePrefix: process.env.NODE_ENV === 'production' ? '/GSPbook' : '',
+		imagePrefix: process.env.IMAGE_PREFIX || '',
 	},
 
 	webpack: function (config, { isServer }) {
