@@ -10,7 +10,7 @@
         "authors": [
           {
             "name": "Arash Amini",
-            "photoUrl": "https://mohammadraziei.github.io/static/assets/images/arash-amini.jpg",
+            "photoUrl": "https://www.ee.sharif.ir/documents/1230688/3324579/DSC_8612-526x526.jpg",
             "bio": "Signal Processing Lecturer at Sharif University of Technology",
             "linkedInUrl": "#",
             "homepageUrl": "https://sharif.ir/~aamini/"
@@ -35,6 +35,11 @@
         "title": "Citation",
         "code": "@book{gsp2023,\n  author = {Amini, Arash and Raziei, Mohammad},\n  title = {The Foundations of Graph Signal Processing},\n  year = {2023},\n  publisher = {Sharif University of Technology Press}\n}",
         "webcite": "Cite this page"
+      },
+      "github": {
+        "title": "Explore Our GitHub Repository",
+        "description": "A collection of notebooks and other course materials available for you to explore and learn from.",
+        "buttonText": "Visit GitHub"
       }
     },
     "details": {

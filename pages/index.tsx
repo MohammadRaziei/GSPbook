@@ -6,6 +6,7 @@ import { PageHeader } from '../components/PageHeader';
 import { BookOverview } from '../components/BookOverview';
 import { AuthorSection } from '../components/AuthorSection';
 import { CitationSection } from '../components/CitationSection';
+import { GitHubSection } from '../components/GitHubSection';
 
 export default function Index() {
     const { t } = useTranslation();
@@ -22,6 +23,7 @@ export default function Index() {
                 <PageHeader title={pageTitle} />
                 <BookOverview />
                 <AuthorSection />
+                <GitHubSection />
                 <CitationSection />
             </main>
         </Container>
