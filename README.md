@@ -8,8 +8,8 @@ For more information about the course, visit the official course website at [moh
 
 ## About the Authors
 
-- **Arash Amini**: A renowned researcher in signal processing at Sharif University of Technology. For more information, visit [Arash Amini's Homepage](https://sharif.ir/~aamini/).
-- **Mohammad Raziei**: An expert in applied mathematics and signal processing, contributing significantly to the field. For more information, visit [Mohammad Raziei's Homepage](https://mohammadraziei.github.io).
+- **Arash Amini**: A professor in signal processing at Sharif University of Technology. For more information, visit [Arash Amini's Homepage](https://sharif.ir/~aamini/).
+- **Mohammad Raziei**: An expert in signal processing, contributing significantly to the field. For more information, visit [Mohammad Raziei's Homepage](https://mohammadraziei.github.io).
 
 ## Citation
 
