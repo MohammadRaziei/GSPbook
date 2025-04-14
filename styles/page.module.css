@@ -95,12 +95,12 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	padding: 8px 4px;
+	padding: 6px 4px;
 	cursor: pointer;
 	transition: all 0.2s ease;
 	white-space: nowrap;
 	color: black;
-	min-width: 50px;
+	width: 50px;
 }
 
 .langOption:hover {
